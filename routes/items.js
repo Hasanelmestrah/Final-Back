@@ -20,7 +20,7 @@ router.get("/items/:category_id", getItemsByCategory);
 router.get("/products/:categoryName", getItemsByCategoryName);
 router.get("/getdiscount", getdiscount);
 
-router.post("/additem", protect, upload.single("image"), postitems);
+router.post("/additem", upload.single("image"), postitems);
 router.delete("/delitem/:id", protect, deleteitems);
 router.put("/upditem/:id", protect, updateitems);
 
