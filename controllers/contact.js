@@ -17,7 +17,7 @@ const postcontactus = async (req, res) => {
   } else {
     const contactpost = await Contactus.create({
       fullName: req.body.fullName,
-      email: req.body.mail,
+      mail: req.body.mail,
       Message: req.body.Message,
     });
     return res.status(200).json(contactpost);
